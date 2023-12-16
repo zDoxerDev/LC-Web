@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="icon" href="/src/img/LC-logo.png">
+    <script defer src="/src/script.js"></script>
+    <title>Lumic Studios</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo-container">
+                <a href="/"><img src="/src/img/LC-logo.png" alt="Logo de Lumic Studios"></a>
+                <span>Lumic Studios</span>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#games">Games</a></li>
+                <li class="err"><a href="#socials">Socials</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Bienvenido a Lumic Studios</h1>
+        <p>Este es el contenido de la sección Home. Puedes agregar más información aquí.</p>
+    </section>
+
+    <section id="about">
+        <h2>Acerca de Nosotros</h2>
+        <p>Información sobre quiénes somos y qué hacemos.</p>
+    </section>
+
+    <section id="games">
+        <h2>Nuestros Juegos</h2>
+        <p>Descubre los emocionantes juegos que ofrecemos.</p>
+    </section>
+
+    <section id="socials">
+        <h2>Síguenos en Redes Sociales</h2>
+        <p>Conéctate con nosotros en redes sociales para estar al tanto de las últimas novedades.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Lumic Studios</p>
+    </footer>
+
+    <button id="helpBtn" onclick="toggleChatBox">&#63;</button>
+
+    <div id="chatBox">
+        <div id="chatBoxHeader">Help Chat</div>
+        <div id="chatMessages">
+            <!-- Aquí se mostrarán los mensajes del chatbot y del usuario -->
+        </div>
+        <input type="text" id="userInput" placeholder="Escribe tu mensaje...">
+        <button id="sendBtn" onclick="enviarMensajeUsuario()">Enviar</button>
+    </div>
+
+</body>
+</html>
