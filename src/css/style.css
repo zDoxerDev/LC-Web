@@ -1,0 +1,160 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 5px;
+    padding-left: 20px;
+    transition: color 0.3s ease;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li:hover {
+    color: #ffc107;
+}
+
+.err {
+
+  padding-right: 30px;
+
+}
+
+section {
+    padding: 20px;
+    margin-top: 70px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+#helpBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffc107;
+    color: #000;
+    border: none;
+    border-radius: 5%;
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#helpBtn:hover {
+    background-color: #ffd700;
+    color: #333;
+}
+
+#chatBox {
+    display: none;
+    position: fixed;
+    bottom: 60px;
+    right: 10px;
+    background-color: #222;
+    color: #fff;
+    border: 1px solid #444;
+    border-radius: 5px;
+    width: 300px;
+    transition: background-color 0.3s ease;
+    padding: 5px;
+}
+
+#chatBoxHeader {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-toft-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+}
+
+#chatBoxHeader:hover {
+    background-color: #444;
+}
+
+#chatMessages {
+    height: 200px;
+    overflow-y: scroll;
+    padding: 10px;
+    background-color: #1a1a1a;
+}
+
+#userInput {
+    width: 70%;
+    padding: 8px;
+    margin-right: 5px;
+    border: 1px solid #444;
+    border-radius: 3px;
+    background-color: #333;
+    color: #fff;
+}
+
+#sendBtn {
+    padding: 8px;
+    cursor: pointer;
+    background-color: #ffc107;
+    color: #000;
+    border: none;
+    border-radius: 2px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#sendBtn:hover {
+    background-color: #ffd700;
+    color: #333;
+}
